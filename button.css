@@ -1,0 +1,18 @@
+#sideButton {
+    position: fixed;
+    top: 50%;
+    left: -150px; /* Initial position outside the viewport */
+    transform: translateY(-50%);
+    
+    border: none;
+    cursor: pointer;
+    transition: left 0.5s ease, opacity 0.5s ease; /* Transition for smooth movement and opacity */
+    z-index: 9999; /* Ensure the button appears above other content */
+    opacity: 0; /* Initially hide the button */
+}
+
+#sideButton img {
+    width: 50px; /* Adjust the size of the image as needed */
+    height: 50px;
+    /* Remove filter: invert(1); */
+}
